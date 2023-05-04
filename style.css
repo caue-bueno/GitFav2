@@ -58,6 +58,7 @@ input {
   color: white;
   font-weight: 600;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -78,15 +79,14 @@ main {
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  
-  
+  border-collapse: collapse;  
 }
 
 table * {
   color: white;
   font-size: 2rem;
   font-weight: bold;
+  text-decoration: none;
 }
 
 table span {
@@ -95,8 +95,12 @@ table span {
 
 .heading {
   height: 6.4rem;
-  background-color: #092D38;
+  background-color: transparent;
   text-align: left;
+}
+
+table th {
+  background-color: #092D38;
 }
 
 table th:nth-child(1) {
@@ -105,7 +109,6 @@ table th:nth-child(1) {
 
 table th:first-child {
   border-top-left-radius: 1rem;
-  
 }
 
 table th:last-child {
@@ -115,12 +118,10 @@ table th:last-child {
 
 table tr {
   height: 10rem;
-  border-top: none;
   background-color: rgba(6, 22, 27, 0.5);
 }
 
-table tr:nth-child(odd) {
-  
+table tr:nth-child(even) {
   background-color: #06181C;
 }
 
@@ -129,7 +130,6 @@ table tr:nth-child(odd) {
   height: 10rem;
   padding-left: 4rem;
   align-items: center;
-  
 }
 
 td img {
